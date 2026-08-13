@@ -4,7 +4,7 @@ import InfobipLogo from '../../../assets/partners/Infobip.jpeg';
 import TelecallLogo from '../../../assets/partners/Telecall.jpeg';
 import ChinaTelecomLogo from '../../../assets/partners/China Skyline.jpeg';
 import ItniotechLogo from '../../../assets/partners/Itnio tech.jpeg';
-import Six5Logo from '../../../assets/partners/six5.jpeg';
+import Six5Logo from '../../../assets/partners/Six5.jpeg';
 import GTSLogo from '../../../assets/partners/GTS.jpeg';
 
 const partnersList: Partner[] = [

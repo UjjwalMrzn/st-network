@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
                 Connect, Communicate and Grow.
               </p>
               <div className="flex items-center gap-3 pt-2">
-                <a href="#" className="w-9 h-9 rounded-full bg-slate-800 hover:bg-emerald-600 flex items-center justify-center transition-colors">
+                <a href="https://www.linkedin.com/company/143194912" className="w-9 h-9 rounded-full bg-slate-800 hover:bg-emerald-600 flex items-center justify-center transition-colors">
                   <LinkedinIcon className="w-4 h-4" />
                 </a>
                 <a href="#" className="w-9 h-9 rounded-full bg-slate-800 hover:bg-emerald-600 flex items-center justify-center transition-colors">
