@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from '../components/layout/Navbar';
+import { Footer } from '../components/layout/Footer';
 import { Home } from '../pages/Home/Home';
 
 // Simple placeholder page for About Us & Leadership
@@ -20,6 +21,7 @@ export const AppRouter: React.FC = () => {
         <Route path="/about" element={<DummyPage title="About Us - Company Info" />} />
         <Route path="/leadership" element={<DummyPage title="Leadership Team" />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

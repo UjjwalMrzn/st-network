@@ -10,40 +10,54 @@ const locations = [
   { name: "USA", coordinates: [-95.7129, 37.0902] },
 ];
 
+const stats = [
+  { value: "600+", label: "Interconnects" },
+  { value: "150+", label: "Countries Served" },
+  { value: "85+", label: "Direct MNO Partners" },
+  { value: "4B+", label: "Subscriber Reach" },
+];
+
 export const WorldMap: React.FC = () => {
   return (
-    <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <div className="mb-10 space-y-3">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900">
-          Global <span className="text-emerald-600">Presence</span>
-        </h2>
-        <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto">
-          Direct interconnects and global carrier hubs across major international telecommunication routes.
-        </p>
+    <section className="py-14 bg-white text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-14 space-y-3">
+          <div className="w-12 h-1.5 bg-emerald-500 rounded-full mx-auto mb-2" />
+          <h2 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight">
+            Global <span className="text-emerald-600">Presence</span>
+          </h2>
+          <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto">
+            Direct interconnects and global carrier hubs across major international telecommunication routes.
+          </p>
+        </div>
       </div>
 
-      <div className="relative w-full bg-white rounded-3xl border border-slate-200 p-4 sm:p-8 overflow-hidden shadow-xs">
+      <div className="relative w-full">
         <ComposableMap
           projection="geoMercator"
-          projectionConfig={{ scale: 120, center: [20, 20] }}
-          className="w-full h-auto max-h-[500px]"
+          projectionConfig={{ scale: 130, center: [20, 15] }}
+          width={980}
+          height={520}
+          className="w-full h-auto"
         >
           <Geographies geography={geoUrl}>
             {({ geographies }) =>
-              geographies.map((geo) => (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  fill="#e2e8f0"
-                  stroke="#cbd5e1"
-                  strokeWidth={0.5}
-                  style={{
-                    default: { outline: "none" },
-                    hover: { fill: "#10b981", outline: "none" },
-                    pressed: { outline: "none" },
-                  }}
-                />
-              ))
+              geographies
+                .filter((geo) => geo.properties.name !== "Antarctica")
+                .map((geo) => (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    fill="#e2e8f0"
+                    stroke="#cbd5e1"
+                    strokeWidth={0.5}
+                    style={{
+                      default: { outline: "none" },
+                      hover: { fill: "#10b981", outline: "none" },
+                      pressed: { outline: "none" },
+                    }}
+                  />
+                ))
             }
           </Geographies>
 
@@ -66,6 +80,17 @@ export const WorldMap: React.FC = () => {
             </Marker>
           ))}
         </ComposableMap>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <p className="text-3xl sm:text-4xl font-black text-slate-900">{stat.value}</p>
+              <p className="text-slate-600 text-sm sm:text-base mt-1">{stat.label}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

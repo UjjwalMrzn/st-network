@@ -18,7 +18,7 @@ export const Home: React.FC = () => {
 
   return (
     <main className="flex-grow bg-slate-50 text-slate-900">
-      <section className="min-h-[calc(100vh-5rem)] flex flex-col justify-between">
+      <section className="min-h-[calc(100vh-5rem)] flex flex-col justify-between bg-white">
         <Hero />
         <PartnersMarquee />
       </section>
