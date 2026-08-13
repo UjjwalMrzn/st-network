@@ -3,25 +3,33 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from '../components/layout/Navbar';
 import { Footer } from '../components/layout/Footer';
 import { Home } from '../pages/Home/Home';
+import { CompanyInfo } from '../pages/About/CompanyInfo';
+import { Career } from '../pages/Career/Career';
+import { ScrollToTop } from '../components/ui/ScrollToTop';
 
-// Simple placeholder page for About Us & Leadership
-const DummyPage: React.FC<{ title: string }> = ({ title }) => (
-  <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4">
-    <h1 className="text-4xl font-bold text-white mb-2">{title}</h1>
-    <p className="text-slate-400">Page under construction for ST Network.</p>
+const LeadershipPlaceholder: React.FC = () => (
+  <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 bg-slate-50">
+    <h1 className="text-4xl font-black text-slate-900 mb-2">Leadership Team</h1>
+    <p className="text-slate-600">Executive profiles and leadership team for ST Network.</p>
   </div>
 );
 
 export const AppRouter: React.FC = () => {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<DummyPage title="About Us - Company Info" />} />
-        <Route path="/leadership" element={<DummyPage title="Leadership Team" />} />
-      </Routes>
-      <Footer />
+      <ScrollToTop />
+      <div className="flex flex-col min-h-screen bg-slate-50 text-slate-900 antialiased">
+        <Navbar />
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<CompanyInfo />} />
+            <Route path="/career" element={<Career />} />
+            <Route path="/leadership" element={<LeadershipPlaceholder />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 };

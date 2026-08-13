@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Network, Mail, Phone, MapPin } from 'lucide-react';
+import { Network, Phone, MapPin } from 'lucide-react';
 import { BackToTop } from '../ui/BackToTop';
 
 // lucide-react 1.0 removed brand/logo icons, so these are defined inline
@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
     <>
       <footer className="bg-slate-900 text-slate-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-start">
 
             {/* Brand + Description */}
             <div className="lg:col-span-1 space-y-5">
@@ -82,8 +82,8 @@ export const Footer: React.FC = () => {
               </div>
             </div>
 
-            {/* Quick Links */}
-            <div>
+            {/* Quick Links (Centered on desktop with equal gaps on both sides) */}
+            <div className="lg:justify-self-center">
               <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Quick Links</h3>
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
@@ -106,12 +106,8 @@ export const Footer: React.FC = () => {
               <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-5">Get In Touch</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3 text-sm text-slate-400">
-                  <Mail className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
-                  <span>support@stnetwork.com</span>
-                </li>
-                <li className="flex items-start gap-3 text-sm text-slate-400">
                   <Phone className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
-                  <span>+1 (800) 555-0199</span>
+                  <span>+91 97662 00064</span>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-slate-400">
                   <MapPin className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />

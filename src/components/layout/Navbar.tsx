@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Network, ChevronDown, Menu, X } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const scrollToProducts = () => {
-    navigate('/');
-    setTimeout(() => {
-      const element = document.getElementById('product-services');
+  const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      navigate('/', { state: { scrollTo: sectionId } });
+    } else {
+      const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 100);
+    }
   };
 
   return (
@@ -62,28 +64,31 @@ export const Navbar: React.FC = () => {
 
           {/* Product & Services */}
           <button
-            onClick={scrollToProducts}
+            onClick={() => scrollToSection('product-services')}
             className="text-sm font-semibold text-slate-700 hover:text-emerald-600 transition-colors cursor-pointer"
           >
             Product & Services
           </button>
 
           {/* Career */}
-          <Link to="/about" className="text-sm font-semibold text-slate-700 hover:text-emerald-600 transition-colors">
+          <Link to="/career" className="text-sm font-semibold text-slate-700 hover:text-emerald-600 transition-colors">
             Career
           </Link>
 
           {/* Contact Us */}
-          <a href="#contact" className="text-sm font-semibold text-slate-700 hover:text-emerald-600 transition-colors">
+          <button
+            onClick={() => scrollToSection('contact')}
+            className="text-sm font-semibold text-slate-700 hover:text-emerald-600 transition-colors cursor-pointer"
+          >
             Contact Us
-          </a>
+          </button>
         </nav>
 
         {/* Right Spacer for Mobile Menu Toggle */}
         <div className="flex items-center gap-3">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-slate-600 hover:text-slate-900"
+            className="md:hidden p-2 text-slate-600 hover:text-slate-900 cursor-pointer"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -102,18 +107,24 @@ export const Navbar: React.FC = () => {
           <button
             onClick={() => {
               setIsOpen(false);
-              scrollToProducts();
+              scrollToSection('product-services');
             }}
-            className="block w-full text-left py-2 text-slate-700 font-medium"
+            className="block w-full text-left py-2 text-slate-700 font-medium cursor-pointer"
           >
             Product & Services
           </button>
-          <Link to="/about" onClick={() => setIsOpen(false)} className="block py-2 text-slate-700 font-medium">
+          <Link to="/career" onClick={() => setIsOpen(false)} className="block py-2 text-slate-700 font-medium">
             Career
           </Link>
-          <a href="#contact" onClick={() => setIsOpen(false)} className="block py-2 text-slate-700 font-medium">
+          <button
+            onClick={() => {
+              setIsOpen(false);
+              scrollToSection('contact');
+            }}
+            className="block w-full text-left py-2 text-slate-700 font-medium cursor-pointer"
+          >
             Contact Us
-          </a>
+          </button>
         </div>
       )}
     </header>
