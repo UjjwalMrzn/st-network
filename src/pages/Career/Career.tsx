@@ -11,7 +11,7 @@ import {
   Briefcase,
   Upload,
   Send,
-  Sparkles,
+  // Sparkles,
   UserPlus,
   MessageSquare,
 } from 'lucide-react';
