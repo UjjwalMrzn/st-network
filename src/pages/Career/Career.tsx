@@ -59,7 +59,7 @@ export const Career: React.FC = () => {
               Home
             </Link>
             <span>/</span>
-            <span className="text-emerald-500">Careers</span>
+            <span className="text-emerald-500">Career</span>
           </nav>
         </div>
       </section>
