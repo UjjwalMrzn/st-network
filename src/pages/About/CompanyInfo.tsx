@@ -22,28 +22,28 @@ export const CompanyInfo: React.FC = () => {
       icon: Radio,
     },
     {
-      title: 'Enterprise Messaging',
-      desc: 'Scalable omnichannel messaging solutions designed for modern enterprise workflows.',
+      title: 'RCS',
+      desc: 'Rich Communication Services (RCS) messaging for enhanced customer engagement and interactive experiences.',
       icon: MessageSquare,
     },
     {
-      title: 'International Messaging',
-      desc: 'Global reach across international operators with optimized route termination.',
+      title: 'WhatsApp Messaging',
+      desc: 'Secure and reliable WhatsApp Business API messaging for global communication.',
       icon: Globe,
     },
     {
-      title: 'Telecom Interconnection',
-      desc: 'Direct interconnects and robust carrier hub routing for seamless communication.',
+      title: 'Software Solutions',
+      desc: 'Custom software development, automation tools, and communication platforms tailored to business needs.',
       icon: Globe2,
     },
     {
-      title: 'Software & Technology Solutions',
-      desc: 'Custom telecom software, automated routing suites, and bespoke technology platforms.',
+      title: 'Communication Platforms',
+      desc: 'Robust platforms for messaging, notifications, and customer engagement across multiple channels.',
       icon: Code2,
     },
     {
-      title: 'Global Carrier Partnerships',
-      desc: 'Extensive ecosystem of aggregators and communication providers worldwide.',
+      title: 'Telecom Interconnections',
+      desc: 'Direct interconnections with telecom operators for optimized routing and delivery performance.',
       icon: Handshake,
     },
   ];
@@ -94,19 +94,19 @@ export const CompanyInfo: React.FC = () => {
             <div className="w-12 h-1.5 bg-emerald-500 rounded-full" />
             
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              About <span className="text-emerald-600">ST Network</span>
+              About <span className="text-emerald-600">ST Network's</span>
             </h2>
 
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
-              <strong className="text-slate-900 font-bold">ST Network (STN)</strong> is a global entity of <strong className="text-slate-900 font-bold">Squad Telekom</strong>, focused on delivering reliable, scalable, and high-quality communication and software solutions to businesses and global connectivity partners.
+              <strong className="text-slate-900 font-bold">(STN)</strong> is a telecommunications and technology company focused on delivering reliable, scalable and high-quality communication and software solutions to local businesses and global partners.
             </p>
 
             <p className="text-slate-600 text-base leading-relaxed">
-              We specialize in <strong className="text-slate-800">Enterprise Messaging, A2P SMS, international messaging, telecom interconnection, and software solutions</strong>, helping enterprises, aggregators, and communication providers streamline their operations and connect with customers across global markets.
+              We specialize in <strong className="text-slate-800">A2P SMS, RCS, WhatsApp Messaging, Telecom Interconnections and Software Solutions.</strong> Helping enterprises, aggregators and communication providers to streamline their operations and connect with customers across global markets.
             </p>
 
             <p className="text-slate-600 text-base leading-relaxed">
-              Our approach is built around strong partnerships, competitive connectivity, route quality, innovative technology, transparent business practices, and responsive customer support. We work closely with our partners to develop sustainable telecom and technology solutions that meet their evolving business needs.
+Our approach is built around strong partnerships, competitive connectivity, route quality, innovative technology, transparent business practices and responsive customer support. We work closely with our partners to develop sustainable telecom and technology solutions that meet their evolving business needs.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ export const CompanyInfo: React.FC = () => {
       <section className="w-full bg-emerald-600 text-white py-8 sm:py-10 px-4 sm:px-6 lg:px-8 border-y border-emerald-500 shadow-md">
         <div className="max-w-6xl mx-auto text-center space-y-3">
           <p className="text-base sm:text-2xl font-semibold leading-relaxed text-emerald-50">
-            At <strong className="font-bold text-white">STN</strong>, we believe in building long-term partnerships, reliable connectivity, and innovative technology solutions that help businesses communicate, connect, and grow.
+            At <strong className="font-bold text-white">STN</strong>, we believe in building long term partnerships, reliable connectivity, and innovative technology solutions that help businesses communicate, connect and grow.
           </p>
           <div className="pt-2 border-t border-emerald-500/60 max-w-3xl mx-auto">
             <p className="text-lg sm:text-2xl font-black text-white tracking-wide sm:whitespace-nowrap">

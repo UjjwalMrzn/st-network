@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { Network, ChevronDown, Menu, X } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
+import logoImg from '../../assets/stnetworkslogo.png';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,17 +24,16 @@ export const Navbar: React.FC = () => {
     <header className="sticky top-0 z-50 bg-white border-b border-slate-100 shadow-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between relative">
         
-        {/* Left - Logo */}
+        {/* Left - Logo Image */}
         <Link to="/" className="flex items-center gap-3 group z-10">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-600 flex items-center justify-center text-white shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform">
-            <Network className="w-6 h-6" />
-          </div>
-          <span className="font-black text-xl text-slate-900 tracking-wider">
-            ST <span className="text-emerald-600">NETWORK</span>
-          </span>
+          <img
+            src={logoImg}
+            alt="ST Network"
+            className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105"
+          />
         </Link>
 
-        {/* Center - Perfectly Centered Navigation Links */}
+        {/* Center - Navigation Links */}
         <nav className="hidden md:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
           {/* About Us Dropdown */}
           <div 
@@ -84,7 +84,7 @@ export const Navbar: React.FC = () => {
           </button>
         </nav>
 
-        {/* Right Spacer for Mobile Menu Toggle */}
+        {/* Right - Mobile Menu Toggle */}
         <div className="flex items-center gap-3">
           <button
             onClick={() => setIsOpen(!isOpen)}

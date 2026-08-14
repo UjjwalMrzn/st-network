@@ -4,17 +4,17 @@ import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
 const locations = [
-  { name: "IND (India)", coordinates: [78.9629, 20.5937] },
+  { name: "India", coordinates: [78.9629, 20.5937] },
   { name: "UAE", coordinates: [53.8478, 23.4241] },
   { name: "Singapore", coordinates: [103.8198, 1.3521] },
   { name: "USA", coordinates: [-95.7129, 37.0902] },
 ];
 
 const stats = [
-  { value: "600+", label: "Interconnects" },
-  { value: "150+", label: "Countries Served" },
-  { value: "85+", label: "Direct MNO Partners" },
-  { value: "4B+", label: "Subscriber Reach" },
+  { value: "2026", label: "Trusted Since" },
+  { value: "2M+", label: "Messages Delivered Daily" },
+  { value: "50+", label: "Experts Behind Every Message" },
+  { value: "24/7", label: "Dedicated Support" },
 ];
 
 export const WorldMap: React.FC = () => {

@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-slate-600 text-base sm:text-lg max-w-xl leading-relaxed"
           >
-            Enabling businesses to connect and drive value through customer engagement.
+            Innovative technology solutions, including A2P messaging, global connectivity, telecom interconnection and communication platforms.
           </motion.p>
 
           <motion.div
@@ -82,18 +82,18 @@ export const Hero: React.FC = () => {
                 <BotMessageSquare className="w-6 h-6" />
               </div>
               <div>
-                <p className="text-xs font-black text-slate-800">Bot Messaging</p>
-                <p className="text-[10px] text-emerald-600 font-bold">Automated Support</p>
+                <p className="text-xs font-black text-slate-800">Enterprise</p>
+                <p className="text-[10px] text-emerald-600 font-bold">Solution</p>
               </div>
             </div>
 
-            <div className="absolute right-4 top-1/4 z-20 bg-white p-3 rounded-2xl shadow-xl border border-emerald-100 flex items-center gap-2.5">
+            <div className="absolute right-4 top-1/4 -translate-y-1/2 z-20 bg-white p-3 rounded-2xl shadow-xl border border-emerald-100 flex items-center gap-2.5 animate-bounce">
               <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-white shadow-md shadow-emerald-500/20">
                 <Megaphone className="w-6 h-6" />
               </div>
               <div>
-                <p className="text-xs font-black text-slate-800">Broadcast API</p>
-                <p className="text-[10px] text-slate-500 font-bold">Global Outreach</p>
+                <p className="text-xs font-black text-slate-800">Global</p>
+                <p className="text-[10px] text-emerald-600 font-bold">Connectivity</p>
               </div>
             </div>
 

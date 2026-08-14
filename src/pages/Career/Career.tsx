@@ -52,7 +52,7 @@ export const Career: React.FC = () => {
             <Sparkles className="w-3.5 h-3.5" /> Join Our Global Team
           </div>
           <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
-            Careers at <span className="text-emerald-500">ST Network</span>
+            Careers at <span className="text-emerald-500">ST Network's</span>
           </h1>
           <nav className="flex justify-center items-center gap-2 text-sm font-semibold text-slate-400">
             <Link to="/" className="hover:text-emerald-400 transition-colors">
