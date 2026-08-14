@@ -48,9 +48,9 @@ export const Career: React.FC = () => {
         <div className="absolute inset-0 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none" />
 
         <div className="relative z-10 max-w-4xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest">
+          {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest">
             <Sparkles className="w-3.5 h-3.5" /> Join Our Global Team
-          </div>
+          </div> */}
           <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
             Careers at <span className="text-emerald-500">ST Networks</span>
           </h1>
@@ -74,7 +74,7 @@ export const Career: React.FC = () => {
         <div className="text-center mb-10 space-y-3 relative z-10">
           <div className="w-12 h-1.5 bg-emerald-500 rounded-full mx-auto mb-2" />
           <h2 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight">
-            Career<span className="text-emerald-600">Application</span>
+            Career <span className="text-emerald-600">Application</span>
           </h2>
           <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto">
             Build your dream career with STN. Submit your application and resume below to get started.
