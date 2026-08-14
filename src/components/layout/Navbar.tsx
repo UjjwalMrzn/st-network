@@ -28,7 +28,7 @@ export const Navbar: React.FC = () => {
         <Link to="/" className="flex items-center gap-3 group z-10">
           <img
             src={logoImg}
-            alt="ST Network"
+            alt="ST Networks"
             className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105"
           />
         </Link>

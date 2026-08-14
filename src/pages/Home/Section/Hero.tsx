@@ -14,8 +14,8 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight leading-[1.15]"
           >
-            Connect, <br />
-            Communicate, <br />
+            Connect <br />
+            Communicate <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">
               Grow
             </span>

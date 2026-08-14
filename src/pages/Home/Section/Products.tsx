@@ -56,7 +56,7 @@ export const Products: React.FC = () => {
           <div className="max-w-3xl mb-12 space-y-2 text-left">
             <h3 className="text-3xl font-bold text-emerald-600">Engage</h3>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Meet customers where they are with connected, real-time conversations across every preferred channel. Our omnichannel suite helps enterprises create seamless and personalized engagement at scale.
+              Our tools, from messaging platforms to enterprise solutions, help businesses engage and connect with their audience seamlessly.
             </p>
           </div>
 

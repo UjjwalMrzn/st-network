@@ -27,7 +27,7 @@ export const WorldMap: React.FC = () => {
             Global <span className="text-emerald-600">Presence</span>
           </h2>
           <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto">
-            Direct interconnects and global carrier hubs across major international telecommunication routes.
+            Our global services connect businesses and individuals across continents, ensuring your messages reach the right audience anywhere in the world.
           </p>
         </div>
       </div>

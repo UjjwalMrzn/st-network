@@ -58,7 +58,7 @@ export const Footer: React.FC = () => {
               >
                 <img
                   src={logoImg}
-                  alt="ST Network"
+                  alt="ST Networks"
                   className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105"
                 />
               </Link>
@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
                 A telecommunications and technology company delivering reliable, scalable, and high-quality communication and software solutions to businesses and global connectivity partners.
               </p>
               <p className="text-sm font-bold text-emerald-500 tracking-wide">
-                Connect, Communicate and Grow.
+                Connect Communicate and Grow
               </p>
               <div className="flex items-center gap-3 pt-2">
                 <a
@@ -140,7 +140,7 @@ export const Footer: React.FC = () => {
         <div className="border-t border-slate-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs text-slate-500">
-              © {new Date().getFullYear()} ST Network's. All rights reserved.
+              © {new Date().getFullYear()} ST Networks. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-xs text-slate-500">
               <a href="#" className="hover:text-emerald-500 transition-colors">Privacy Policy</a>

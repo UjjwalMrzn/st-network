@@ -94,7 +94,7 @@ export const CompanyInfo: React.FC = () => {
             <div className="w-12 h-1.5 bg-emerald-500 rounded-full" />
             
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              About <span className="text-emerald-600">ST Network's</span>
+              About <span className="text-emerald-600">ST Networks</span>
             </h2>
 
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
@@ -152,7 +152,7 @@ Our approach is built around strong partnerships, competitive connectivity, rout
           </p>
           <div className="pt-2 border-t border-emerald-500/60 max-w-3xl mx-auto">
             <p className="text-lg sm:text-2xl font-black text-white tracking-wide sm:whitespace-nowrap">
-              STN — Connect, Communicate and Grow.
+              Connect Communicate and Grow
             </p>
           </div>
         </div>
