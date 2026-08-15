@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Mail, CheckCircle2 } from 'lucide-react';
+import {  Mail, CheckCircle2 } from 'lucide-react';
 import { FloatingBackgroundShapes } from '../../components/ui/FloatingBackgroundShapes';
 
 export const PrivacyPolicy: React.FC = () => {
@@ -11,9 +11,6 @@ export const PrivacyPolicy: React.FC = () => {
         <div className="absolute inset-0 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none" />
 
         <div className="relative z-10 max-w-4xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest">
-            <ShieldCheck className="w-3.5 h-3.5" /> Legal & Compliance
-          </div>
           <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
             Privacy <span className="text-emerald-500">Policy</span>
           </h1>
@@ -41,9 +38,6 @@ export const PrivacyPolicy: React.FC = () => {
             </p>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
               Throughout this policy, <strong className="text-slate-800">"You"</strong>, <strong className="text-slate-800">"Your"</strong>, and <strong className="text-slate-800">"User"</strong> refer to any enterprise client, carrier partner, aggregator, or individual visiting our platform or using our services. <strong className="text-slate-800">"We"</strong>, <strong className="text-slate-800">"Us"</strong>, and <strong className="text-slate-800">"Our"</strong> refer to ST Networks and its subsidiaries.
-            </p>
-            <p className="text-xs sm:text-sm text-slate-400 font-medium">
-              Last Updated: August 2026
             </p>
           </div>
 
