@@ -143,8 +143,7 @@ export const Footer: React.FC = () => {
               © {new Date().getFullYear()} ST Networks. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-xs text-slate-500">
-              <a href="#" className="hover:text-emerald-500 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-emerald-500 transition-colors">Terms of Service</a>
+              <a href="/privacy" className="hover:text-emerald-500 transition-colors">Privacy Policy</a>
             </div>
           </div>
         </div>
